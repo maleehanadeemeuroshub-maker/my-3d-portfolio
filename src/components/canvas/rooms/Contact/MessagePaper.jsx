@@ -147,15 +147,15 @@ const SmoothButton = ({ texture, onClick, position, size, text, fontPath }) => {
 };
 
 // Web3Forms API Key — loaded from environment variable so it's not exposed in the repo.
-// Set VITE_WEB3FORMS_KEY in .env (local dev) and in Cloudflare Pages dashboard (production).
+// Set NEXT_PUBLIC_WEB3FORMS_KEY in .env.local (local dev) and in the Vercel project's
+// Environment Variables settings (production). Get a free key at https://web3forms.com
 const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '';
 
 // Only these domains are allowed to submit the form.
 // Anyone cloning the repo and running on localhost will be silently blocked.
 const ALLOWED_ORIGINS = [
-    'MALEEHAdev.com',
-    'www.MALEEHAdev.com',
-    'portfolio-MALEEHA.pages.dev',
+    'vercel.app',
+    'localhost',
 ];
 
 // ═══════════════════════════════════════════════════════════════════════

@@ -26,11 +26,11 @@ const ScreenReaderOverlay = () => {
 
             {/* Main accessible navigation */}
             <nav id="sr-main-nav" className="sr-only" aria-label="Portfolio rooms">
-                <h1>MALEEHA — Creative Developer Portfolio</h1>
+                <h1>Maleeha Nadeem — Full Stack / MERN Developer Portfolio</h1>
                 <h2>Portfolio Navigation</h2>
 
                 {!hasEntered && (
-                    <p>Welcome to MALEEHA's interactive 3D portfolio. Click or press Enter on the doors to enter.</p>
+                    <p>Welcome to Maleeha Nadeem's interactive 3D portfolio. Click or press Enter on the doors to enter.</p>
                 )}
 
                 {hasEntered && !isInRoom && (
@@ -77,11 +77,11 @@ const ScreenReaderOverlay = () => {
                         {currentRoom === 'about' && (
                             <div aria-label="About room content">
                                 <h3>About Me</h3>
-                                <p>This room contains my personal story, awards, journey milestones, and technology skills displayed as interactive balloons.</p>
-                                
+                                <p>This room contains my personal story, internships, education, and technology skills displayed as interactive balloons.</p>
+
                                 {awards && (
                                     <section>
-                                        <h4>My Awards</h4>
+                                        <h4>Internships, Education &amp; Facts</h4>
                                         <ul>
                                             {awards.sotd && awards.sotd.items && awards.sotd.items.map((a, i) => (
                                                 <li key={i}>{a.label} - {a.date} {a.url && <a href={a.url}>View</a>}</li>

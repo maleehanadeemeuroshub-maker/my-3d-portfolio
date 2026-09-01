@@ -36,40 +36,40 @@ export const GALLERY_INTERACTION_AUDIO_SETTINGS = {
 // Define the unique projects and their textures
 const FALLBACK_PROJECTS = [
     {
-        id: 'monetune',
-        title: 'MONETUNE',
+        id: 'euroshub',
+        title: 'EUROSHUB',
         front: '/textures/gallery/monetuneprzod.webp',
         painted: '/textures/gallery/monetuneprzod_painted.webp',
-        url: 'https://monetune.pl',
-        description: 'MoneTune is a step-by-step blueprint that teaches beginners how to generate passive income using AI-created music. Without any musical skills, you will learn how to easily produce professional tracks, publish them on platforms like Spotify, and monetize your digital assets.',
-        techStack: ['/textures/gallery/wordpresslogo.webp', '/textures/gallery/elementorlogo.webp', '/textures/gallery/phplogo.webp', '/textures/gallery/csslogo.webp']
+        url: 'https://final-euroshub-landng-page.vercel.app',
+        description: 'Multi-page marketing website for EurosHub, built during a web development internship — home, about, services, portfolio, team and testimonials pages, fully responsive.',
+        techStack: ['/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp', '/textures/gallery/jslogo.webp']
     },
     {
-        id: 'timber',
-        title: 'TIMBERKITTY',
+        id: 'devnotes',
+        title: 'DEVNOTES',
         front: '/textures/gallery/timberkittyprzod.webp',
         painted: '/textures/gallery/timberkittyprzod_painted.webp',
-        url: 'https://timberkitty.netlify.app',
-        description: 'TimberKitty is an addictive, free-to-play browser arcade game built in pure JavaScript. Players control a lumberjack cat to chop wood, save birds, complete daily missions, and compete on global leaderboards.',
-        techStack: ['/textures/gallery/jslogo.webp', '/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp', '/textures/gallery/firebaselogo.webp']
+        url: 'https://blog-website-euros-hub1.vercel.app',
+        description: 'A React + Vite blog platform with routed pages for home, articles, categories and contact, built around reusable components and hooks.',
+        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp']
     },
     {
-        id: 'young',
-        title: 'YOUNG MULTI',
+        id: 'netflix-clone',
+        title: 'NETFLIX CLONE',
         front: '/textures/gallery/youngmultiprzod.webp',
         painted: '/textures/gallery/youngmultiprzod_painted.webp',
-        url: 'https://young-multi-strona.netlify.app',
-        description: 'A sleek, modern concept website dedicated to the Polish rapper and creator Young Multi. It serves as a promotional landing page designed to highlight his personal brand, music, and online presence.',
-        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/tailwindlogo.webp', '/textures/gallery/htmllogo.webp', '/textures/gallery/netlifylogo.webp']
+        url: 'https://netflixx-olive.vercel.app',
+        description: 'A front-end clone of the Netflix landing and browse experience, including a sign-up flow and a streaming page with movie rows.',
+        techStack: ['/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp', '/textures/gallery/jslogo.webp']
     },
     {
-        id: 'bio',
-        title: 'BIO',
+        id: 'studydesk',
+        title: 'STUDYDESK',
         front: '/textures/gallery/bioprzod.webp',
         painted: '/textures/gallery/bioprzod_painted.webp',
-        url: 'https://tomkingbio.netlify.app',
-        description: 'A fast, modern personal bio page serving as a central hub for my digital footprint. It showcases my latest coding projects, web development services, YouTube videos, and recommended music artists.',
-        techStack: ['/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp', '/textures/gallery/jslogo.webp', '/textures/gallery/netlifylogo.webp']
+        url: 'https://dashboard-euros-hub1.vercel.app',
+        description: 'A single-page student dashboard for tracking courses, homework, grades and a weekly class schedule, with term-progress tracking and quick stats.',
+        techStack: ['/textures/gallery/htmllogo.webp', '/textures/gallery/tailwindlogo.webp', '/textures/gallery/jslogo.webp']
     },
 ];
 
@@ -1058,8 +1058,9 @@ const ProjectCard = memo(forwardRef(({ index, project, clothespinTexture, curren
         let displayX = ((rawX + halfWidth) % totalWidth + totalWidth) % totalWidth - halfWidth;
 
         const u = (displayX + 16) / 32;
-        const safeU = THREE.MathUtils.clamp(u, 0, 1);
+        const safeU = Number.isFinite(u) ? THREE.MathUtils.clamp(u, 0, 1) : 0.5;
         const pointOnCurve = curve.getPointAt(safeU);
+        if (!pointOnCurve) return;
 
         cardRef.current.position.set(pointOnCurve.x, pointOnCurve.y, pointOnCurve.z);
 

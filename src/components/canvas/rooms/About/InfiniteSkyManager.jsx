@@ -365,7 +365,7 @@ const IntroMilestone = ({ z, scrollProgressRef }) => {
                 anchorY="middle"
                 font="/fonts/CabinSketch-Regular.ttf"
             >
-                (MALEEHA)
+                (Full Stack / MERN)
             </Text>
 
             {/* Avatar on cloud - floating + spreads up-left */}
@@ -390,7 +390,7 @@ const IntroMilestone = ({ z, scrollProgressRef }) => {
                 font="/fonts/CabinSketch-Regular.ttf"
                 fontStyle="italic"
             >
-                "Crafting digital experiences
+                "Building clean, modern web
             </Text>
 
             {/* Motto - Line 2 (spreads left) */}
@@ -404,7 +404,7 @@ const IntroMilestone = ({ z, scrollProgressRef }) => {
                 font="/fonts/CabinSketch-Regular.ttf"
                 fontStyle="italic"
             >
-                that push creative boundaries"
+                experiences that just work"
             </Text>
         </group>
     );
@@ -414,58 +414,49 @@ const IntroMilestone = ({ z, scrollProgressRef }) => {
  * MOCK DATA FOR AWARDS
  */
 const AWARDS_DATA = {
-    featured: {
-        id: 'award-featured',
-        layout: 'certificate_grid',
-        title: 'Featured Projects Collection',
-        items: [
-            { label: 'Featured - Awwwards', date: 'May 2025', image: '/textures/about/FEATURED.webp', url: 'https://awwwards.com' },
-            { label: 'Featured - CSS Design Awards', date: 'June 2025', image: '/textures/about/FEATURED.webp', url: 'https://cssdesignawards.com' },
-            { label: 'Featured - The FWA', date: 'July 2025', image: '/textures/about/FEATURED.webp', url: 'https://thefwa.com' },
-            { label: 'Featured - Behance', date: 'August 2025', image: '/textures/about/FEATURED.webp', url: 'https://behance.net' },
-        ],
-        platformConfig: {
-            label: 'HONOR',
-            color: '#1a1a1a',
-            icon: '⭐'
-        }
-    },
     sotd: {
         id: 'award-sotd',
         layout: 'certificate_grid',
-        title: 'Site of the Day Awards',
+        title: 'Internships',
         items: [
-            { label: 'SOTD - GSAP', date: 'February 13, 2026', image: '/textures/about/SOTDAYYOUNGMULTIGSAP.webp', url: 'https://www.linkedin.com/posts/greensock_site-of-the-day-young-multi-this-immersive-activity-7427567524940017664-zU2n?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE3TV6UBqXoaJXUN5-1s3ij6SQJwTRAcbCM' },
-            { label: 'SOTD - CSS Winner', date: 'January 24, 2026', image: '/textures/about/SOTDAYYOUNGMULTICSSWINNER.webp', url: 'https://www.csswinner.com/details/young-multi-official-experience/19045' },
-            { label: 'SOTD - Orpetron', date: 'January 29, 2026', image: '/textures/about/SOTDAYYOUNGMULTIORPETRON.webp', url: 'https://orpetron.com/sites/young-multi/' },
-            { label: 'SOTD - Design Nominess', date: 'February 17, 2026', image: '/textures/about/SOTDAYYOUNGMULTIDESIGNNOMINESS.webp', url: 'https://www.designnominees.com/sites/young-multi' }
+            { label: 'Oasis Infobyte Intern', date: 'Web Development', url: null },
+            { label: 'Synent Technologies Intern', date: 'Web Development', url: null },
+            { label: 'EurosHub Intern', date: 'Web Development', url: null }
         ],
         platformConfig: {
-            label: 'AWARD',
+            label: 'EXPERIENCE',
             color: '#1a1a1a',
-            icon: '🏆'
+            icon: '💼'
         }
     },
     sotm: {
         id: 'award-sotm',
         layout: 'certificate_grid',
-        title: 'Site of the Month Awards',
-        items: [],
+        title: 'Education',
+        items: [
+            { label: 'BS Software Engineering', date: '2024 - Present', url: null },
+            { label: 'HSSC (ICS)', date: 'Completed', url: null },
+            { label: 'SSC (Science)', date: 'Completed', url: null }
+        ],
         platformConfig: {
-            label: 'AWARD',
+            label: 'EDUCATION',
             color: '#1a1a1a',
-            icon: '📅'
+            icon: '🎓'
         }
     },
     other: {
         id: 'award-other',
         layout: 'certificate_grid',
-        title: 'Other Awards',
-        items: [],
+        title: 'Quick Facts',
+        items: [
+            { label: '3+ Internships', date: 'Completed', url: null },
+            { label: '16 Live Projects', date: 'Deployed', url: null },
+            { label: '24+ GitHub Repos', date: 'Open Source', url: null }
+        ],
         platformConfig: {
-            label: 'PRESTIGE',
+            label: 'FACTS',
             color: '#1a1a1a',
-            icon: '👑'
+            icon: '🚀'
         }
     }
 };

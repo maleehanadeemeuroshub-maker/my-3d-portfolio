@@ -12,28 +12,28 @@ import { useScene } from '../context/SceneContext';
 const ROOM_META = {
     null: {
         path: '/',
-        title: 'MALEEHA — Creative 3D Portfolio',
-        description: 'Interactive 3D developer portfolio by Tomasz "MALEEHA" Szmajda. Explore WebGL experiments, React projects & GSAP animations in a hand-drawn gallery.',
+        title: 'Maleeha Nadeem — 3D Portfolio',
+        description: 'Interactive 3D developer portfolio of Maleeha Nadeem, a Full Stack / MERN developer. Explore real deployed projects, skills and experience in a hand-drawn 3D gallery.',
     },
     about: {
         path: '/about',
-        title: 'About Me — MALEEHA Portfolio',
-        description: 'Learn about Tomasz "MALEEHA" Szmajda — a creative frontend developer specializing in 3D web experiences, React, Three.js, and GSAP animations.',
+        title: 'About Me — Maleeha Nadeem',
+        description: 'Learn about Maleeha Nadeem — an aspiring Full Stack / MERN developer building clean, responsive, user-friendly web experiences, currently interning at EurosHub.',
     },
     gallery: {
         path: '/gallery',
-        title: 'Gallery & Projects — MALEEHA Portfolio',
-        description: 'Browse the interactive 3D gallery of web development projects by MALEEHA. Each project is displayed as a hand-drawn card you can flip and explore.',
+        title: 'Gallery & Projects — Maleeha Nadeem',
+        description: 'Browse an interactive 3D gallery of real, deployed web development projects by Maleeha Nadeem. Each project is displayed as a hand-drawn card you can flip and explore.',
     },
     studio: {
         path: '/studio',
-        title: 'The Studio — MALEEHA Portfolio',
-        description: 'Explore MALEEHA\'s content studio — YouTube videos, blog posts, and TikToks displayed on floating monitors in an immersive 3D space.',
+        title: 'The Studio — Maleeha Nadeem',
+        description: 'Explore Maleeha Nadeem\'s GitHub repositories and professional profiles, displayed on floating monitors in an immersive 3D space.',
     },
     contact: {
         path: '/contact',
-        title: 'Contact — MALEEHA Portfolio',
-        description: 'Get in touch with Tomasz "MALEEHA" Szmajda. Find social media links and contact information in this interactive 3D contact room.',
+        title: 'Contact — Maleeha Nadeem',
+        description: 'Get in touch with Maleeha Nadeem. Find social media links and contact information in this interactive 3D contact room.',
     },
 };
 
@@ -81,13 +81,14 @@ export function useDocumentMeta() {
         const ogDesc = document.querySelector('meta[property="og:description"]');
         if (ogDesc) ogDesc.setAttribute('content', meta.description);
 
+        const siteOrigin = typeof window !== 'undefined' ? window.location.origin : '';
         const ogUrl = document.querySelector('meta[property="og:url"]');
-        if (ogUrl) ogUrl.setAttribute('content', `https://MALEEHAdev.com${meta.path}`);
+        if (ogUrl) ogUrl.setAttribute('content', `${siteOrigin}${meta.path}`);
 
         // Update canonical link to ensure virtual routes are correctly indexable as separate pages
         const canonicalTag = document.querySelector('link[rel="canonical"]');
         if (canonicalTag) {
-            canonicalTag.setAttribute('href', `https://MALEEHAdev.com${meta.path}`);
+            canonicalTag.setAttribute('href', `${siteOrigin}${meta.path}`);
         }
 
         // Push to browser history (only if not handling a popstate event and room actually changed)
