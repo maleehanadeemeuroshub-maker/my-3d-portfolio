@@ -74,7 +74,7 @@ const FALLBACK_PROJECTS = [
 ];
 
 const PROJECT_COUNT = 20; // One slot per real project so every one is reachable while scrolling
-const GAP = 1.25; // Reduced to match PROJECT_COUNT increase, keeping the same total loop width
+const GAP = 2.0; // Card width is 1.5, so this leaves clear breathing room between cards
 
 // Zmień te wartości aby dopasować proporcje ptaka (legacy ratio 1.41)
 const BIRD_WIDTH = 0.49;
