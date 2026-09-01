@@ -73,8 +73,8 @@ const FALLBACK_PROJECTS = [
     },
 ];
 
-const PROJECT_COUNT = 10; // Keep the count for the infinite scroll feel
-const GAP = 2.5;
+const PROJECT_COUNT = 20; // One slot per real project so every one is reachable while scrolling
+const GAP = 1.25; // Reduced to match PROJECT_COUNT increase, keeping the same total loop width
 
 // Zmień te wartości aby dopasować proporcje ptaka (legacy ratio 1.41)
 const BIRD_WIDTH = 0.49;

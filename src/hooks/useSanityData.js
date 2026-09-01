@@ -112,6 +112,138 @@ export function loadSanityData() {
                 techStack: ['/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp', '/textures/gallery/jslogo.webp'],
                 front: '/textures/gallery/bioprzod.webp',
                 painted: '/textures/gallery/bioprzod_painted.webp'
+            },
+            {
+                _id: '9',
+                title: 'Counter',
+                description: 'A counter built as a real product surface rather than a tutorial exercise — an editable bounded range, step control, session statistics and a timestamped activity log, all driven by React state.',
+                url: 'https://counter-rust-eight.vercel.app',
+                projectUrl: 'https://counter-rust-eight.vercel.app',
+                githubUrl: 'https://github.com/maleehanadeemeuroshub-maker/counter',
+                techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp'],
+                front: '/textures/gallery/monetuneprzod.webp',
+                painted: '/textures/gallery/monetuneprzod_painted.webp'
+            },
+            {
+                _id: '10',
+                title: 'Flux Todo — Multi-Page Edition',
+                description: 'The original multi-page Flux Todo — a mobile-first to-do app with category color-coding and a persistent per-user data store, split into one HTML page per section.',
+                url: 'https://to-do-silk-beta.vercel.app',
+                projectUrl: 'https://to-do-silk-beta.vercel.app',
+                githubUrl: 'https://github.com/maleehanadeemeuroshub-maker/To-Do',
+                techStack: ['/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp', '/textures/gallery/jslogo.webp'],
+                front: '/textures/gallery/timberkittyprzod.webp',
+                painted: '/textures/gallery/timberkittyprzod_painted.webp'
+            },
+            {
+                _id: '11',
+                title: 'Aurora — Notes App',
+                description: 'A fast, distraction-free place to keep notes, lists and ideas, with a clean editor-first interface.',
+                url: 'https://notes-seven-inky.vercel.app',
+                projectUrl: 'https://notes-seven-inky.vercel.app',
+                githubUrl: 'https://github.com/maleehanadeemeuroshub-maker/notes',
+                techStack: ['/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp', '/textures/gallery/jslogo.webp'],
+                front: '/textures/gallery/youngmultiprzod.webp',
+                painted: '/textures/gallery/youngmultiprzod_painted.webp'
+            },
+            {
+                _id: '12',
+                title: 'Weather — Sky, In Real Time',
+                description: 'A real-time weather lookup app with a detail view for extended conditions, built in plain JavaScript against a live weather API.',
+                url: 'https://weather-euros-hub1.vercel.app',
+                projectUrl: 'https://weather-euros-hub1.vercel.app',
+                githubUrl: 'https://github.com/maleehanadeemeuroshub-maker/weather',
+                techStack: ['/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp', '/textures/gallery/jslogo.webp'],
+                front: '/textures/gallery/bioprzod.webp',
+                painted: '/textures/gallery/bioprzod_painted.webp'
+            },
+            {
+                _id: '13',
+                title: 'Movie Search',
+                description: 'A movie discovery app that searches and browses titles with poster art and details, built against a movie database API.',
+                url: 'https://movie-search-roan-eight.vercel.app',
+                projectUrl: 'https://movie-search-roan-eight.vercel.app',
+                githubUrl: 'https://github.com/maleehanadeemeuroshub-maker/movie-search',
+                techStack: ['/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp', '/textures/gallery/jslogo.webp'],
+                front: '/textures/gallery/monetuneprzod.webp',
+                painted: '/textures/gallery/monetuneprzod_painted.webp'
+            },
+            {
+                _id: '14',
+                title: 'Clock Suite',
+                description: 'A dependency-free collection of time tools — digital clock, flip clock, timer/stopwatch and world clock/time zone converter — sharing one navigation shell.',
+                url: 'https://live-clock-nu.vercel.app',
+                projectUrl: 'https://live-clock-nu.vercel.app',
+                githubUrl: 'https://github.com/maleehanadeemeuroshub-maker/live-clock',
+                techStack: ['/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp', '/textures/gallery/jslogo.webp'],
+                front: '/textures/gallery/timberkittyprzod.webp',
+                painted: '/textures/gallery/timberkittyprzod_painted.webp'
+            },
+            {
+                _id: '15',
+                title: 'LearnHub',
+                description: 'A front-end e-learning demo with a full simulated auth flow, a dashboard with stats and progress tracking, and a browsable course catalog — powered entirely by localStorage.',
+                url: 'https://signup-pages-gybm.vercel.app',
+                projectUrl: 'https://signup-pages-gybm.vercel.app',
+                githubUrl: 'https://github.com/maleehanadeemeuroshub-maker/signup-pages',
+                techStack: ['/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp', '/textures/gallery/jslogo.webp'],
+                front: '/textures/gallery/youngmultiprzod.webp',
+                painted: '/textures/gallery/youngmultiprzod_painted.webp'
+            },
+            {
+                _id: '16',
+                title: 'Claude Pricing Page Clone',
+                description: "A pixel-conscious recreation of Anthropic's Claude pricing page — mega-menus, sticky sub-nav, tabs and accordions, almost entirely powered by CSS :checked/:has() and native <details>.",
+                url: 'https://pricing-page-test-three.vercel.app',
+                projectUrl: 'https://pricing-page-test-three.vercel.app',
+                githubUrl: 'https://github.com/maleehanadeemeuroshub-maker/pricing-page-test',
+                techStack: ['/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp', '/textures/gallery/jslogo.webp'],
+                front: '/textures/gallery/bioprzod.webp',
+                painted: '/textures/gallery/bioprzod_painted.webp'
+            },
+            {
+                _id: '17',
+                title: 'CRUD Notes',
+                description: 'An educational notes dashboard that teaches CRUD/REST concepts hands-on — auth flow, tagging, sharing, export/import and an API explorer alongside the working notes app itself.',
+                url: 'https://crud-notes-edu.vercel.app',
+                projectUrl: 'https://crud-notes-edu.vercel.app',
+                githubUrl: 'https://github.com/maleehanadeemeuroshub-maker/crud-notes-edu',
+                techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp'],
+                front: '/textures/gallery/monetuneprzod.webp',
+                painted: '/textures/gallery/monetuneprzod_painted.webp'
+            },
+            {
+                _id: '18',
+                title: 'Product Showcase',
+                description: 'A full-stack e-commerce product showcase with 3D product viewers, an AR simulator modal, cart/wishlist/compare drawers, Stripe checkout and Supabase-backed auth and orders.',
+                url: 'https://product-listing-tau-three.vercel.app',
+                projectUrl: 'https://product-listing-tau-three.vercel.app',
+                githubUrl: 'https://github.com/maleehanadeemeuroshub-maker/product-listing',
+                techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp'],
+                front: '/textures/gallery/timberkittyprzod.webp',
+                painted: '/textures/gallery/timberkittyprzod_painted.webp'
+            },
+            {
+                _id: '19',
+                title: 'Shopify Store',
+                description: 'A full-stack Shopify-style storefront — product catalog, checkout and order emails on the front end, with an admin/seller panel and Supabase backend powering it.',
+                url: 'https://shopify-sand-five.vercel.app',
+                projectUrl: 'https://shopify-sand-five.vercel.app',
+                githubUrl: 'https://github.com/maleehanadeemeuroshub-maker/shopify',
+                techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp'],
+                front: '/textures/gallery/youngmultiprzod.webp',
+                painted: '/textures/gallery/youngmultiprzod_painted.webp'
+            },
+            {
+                _id: '20',
+                title: 'React Todo',
+                description: 'A React todo app with categorized tasks, a profile page, and sync/transfer/purge tools for managing your task data across sessions.',
+                url: 'https://todo-react-woad-psi.vercel.app',
+                projectUrl: 'https://todo-react-woad-psi.vercel.app',
+                githubUrl: 'https://github.com/maleehanadeemeuroshub-maker/todo-react',
+                techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp'],
+                front: '/textures/gallery/bioprzod.webp',
+                painted: '/textures/gallery/bioprzod_painted.webp'
             }
         ];
 
